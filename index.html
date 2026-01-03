@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volkswagen Auto Group – RP</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #0e0e0e;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b0b0b, #1c1c1c);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    header h1 { font-size: 2.6rem; letter-spacing: 2px; }
+    header p { color: #aaa; margin-top: 12px; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      background: #141414;
+      padding: 14px;
+      border-bottom: 1px solid #2a2a2a;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #eaeaea;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover { background: #2a2a2a; color: #9ad1ff; }
+
+    main { max-width: 1300px; margin: 50px auto; padding: 0 22px; }
+
+    section { margin-bottom: 80px; }
+
+    section h2 {
+      font-size: 2.1rem;
+      margin-bottom: 25px;
+      border-left: 5px solid #007aff;
+      padding-left: 15px;
+    }
+
+    .category { margin-bottom: 45px; }
+
+    .category h3 {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+      color: #b5d8ff;
+    }
+
+    .vehicle-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    .vehicle {
+      background: #161616;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #262626;
+      transition: transform 0.2s, border 0.2s;
+    }
+
+    .vehicle:hover { transform: translateY(-4px); border-color: #007aff; }
+
+    .vehicle img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .vehicle h4 { font-size: 1.1rem; margin-bottom: 8px; font-weight: 600; }
+    .vehicle p { font-size: 0.9rem; color: #bdbdbd; margin-bottom: 10px; }
+    .vehicle span { color: #9ad1ff; font-weight: bold; font-size: 1rem; }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      color: #777;
+      border-top: 1px solid #2a2a2a;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Volkswagen Auto Group</h1>
+  <p>Catalogue officiel de location – RolePlay Premium</p>
+</header>
+
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#wolfsburg">Wolfsburg / VW</a>
+  <a href="#audi">Audi</a>
+  <a href="#porsche">Porsche</a>
+  <a href="#bentley">Bentley</a>
+  <a href="#lamborghini">Lamborghini</a>
+</nav>
+
+<main>
+
+<section id="accueil">
+  <h2>Présentation</h2>
+  <p>
+    Volkswagen Auto Group est une entreprise RP spécialisée dans la location de véhicules
+    historiques, modernes, sportifs et de prestige.
+  </p>
+</section>
+
+<!-- ================= VW ================= -->
+
+<section id="wolfsburg">
+  <h2>Wolfsburg / Volkswagen</h2>
+
+  <div class="category">
+    <h3>Classic / New Classic</h3>
+    <div class="vehicle-list">
+
+      <div class="vehicle">
+        <img src="images/1961 van.PNG">
+        <h4>1961 Wolfsburg Van – Deluxe 23-Window</h4>
+        <p>Version luxe, configuration vitrée complète</p>
+        <span>20€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2003 NEw Classic.PNG">
+        <h4>1965 Wolfsburg Classic – 1200 / Classic</h4>
+        <p>Motorisation 1200, finition Classic</p>
+        <span>20€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/Convertible 2008.PNG">
+        <h4>2008 Wolfsburg New Classic – SE Convertible</h4>
+        <p>Cabriolet, finition SE</p>
+        <span>15€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2003 NEw Classic.PNG">
+        <h4>2003 Wolfsburg New Classic – RSI</h4>
+        <p>Version sportive RSI</p>
+        <span>35€/heure</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>Pitch</h3>
+    <div class="vehicle-list">
+
+      <div class="vehicle">
+        <img src="images/2000 Pitch VR6.PNG">
+        <h4>2000 Wolfsburg Pitch – 1.8T / VR6</h4>
+        <p>Choix moteur 1.8T ou VR6</p>
+        <span>25€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2013 Pitch.PNG">
+        <h4>2013 Wolfsburg Pitch – SE 2.0 TDI / R</h4>
+        <p>Diesel SE ou version R</p>
+        <span>90€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2016 Pitch.PNG">
+        <h4>2016 Wolfsburg Pitch – S / SE / R (5-Door)</h4>
+        <p>Configurations 5 portes</p>
+        <span>110€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2016 Pitch sportwagen SE.PNG">
+        <h4>2016 Wolfsburg Pitch SportWagen – SE</h4>
+        <p>Break SportWagen</p>
+        <span>50€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2019 Pitch.PNG">
+        <h4>2019 Wolfsburg Pitch – ePitch SE / GTS Autobahn</h4>
+        <p>Version électrique ou GTS</p>
+        <span>55€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2019 Pitch.PNG">
+        <h4>2019 Wolfsburg Pitch – R</h4>
+        <p>Hautes performances</p>
+        <span>110€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2019 Pitch AllTrack.PNG">
+        <h4>2019 Wolfsburg Pitch Alltrack – Wendigo</h4>
+        <p>Version Alltrack surélevée</p>
+        <span>55€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/2022 Pitch.PNG">
+        <h4>2022 Wolfsburg Pitch – R / GTD / GTE / Life</h4>
+        <p>Gamme complète 2022</p>
+        <span>135€/heure</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>Autres modèles</h3>
+    <div class="vehicle-list">
+
+      <div class="vehicle">
+        <img src="images/poseidon 2018.PNG">
+        <h4>2018 Wolfsburg Poseidon – SEL Premium</h4>
+        <p>3.6L V6 4Motion</p>
+        <span>65€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/poseidon normal.PNG">
+        <h4>2023 Wolfsburg Poseidon – SEL R-Line Premium</h4>
+        <p>3.6L V6 4Motion</p>
+        <span>65€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/poseidon sportback.PNG">
+        <h4>2023 Wolfsburg Poseidon Sportback – SEL R-Line Premium</h4>
+        <p>Sportback V6</p>
+        <span>65€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/symphony.PNG">
+        <h4>2021 Wolfsburg Symphony – SEL / R-Line Premium</h4>
+        <p>Berline luxe</p>
+        <span>85€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/tijuana.PNG">
+        <h4>2021 Wolfsburg Tijuana – SEL / SEL Premium R-Line</h4>
+        <p>SUV urbain</p>
+        <span>60€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/sirocco (tornado).PNG">
+        <h4>2017 Wolfsburg Tornado – R</h4>
+        <p>2.0 TSI sportif</p>
+        <span>95€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/raven.PNG">
+        <h4>2015 Wolfsburg Raven – SLX Wendigo</h4>
+        <p>Finition Wendigo</p>
+        <span>35€/heure</span>
+      </div>
+
+      <div class="vehicle">
+        <img src="images/tesuque.PNG">
+        <h4>2022 Wolfsburg Tesuque – SEL</h4>
+        <p>SUV familial</p>
+        <span>60€/heure</span>
+      </div>
+	  
+	  <div class="vehicle">
+	  <img src="images/discovery.png">
+	  <h4>2022 Wolfsburg Discovery – Pro S / Gradient</h4>
+	  <p>SUV premium</p>
+	  <span>55€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/Handel 2018.png">
+	  <h4>2018 Wolfsburg Handel – R-Line / SEL Premium V6</h4>
+	  <p>V6 confortable</p>
+	  <span>80€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/karen.png">
+	  <h4>2017 Wolfsburg Karen – 2.0 TDI / 2.0 Turbo</h4>
+	  <p>Compact polyvalent</p>
+	  <span>35€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/Charge 2013.PNG">
+	  <h4>2013 Wolfsburg Charge – GT / Turbo</h4>
+	  <p>Sport compacte</p>
+	  <span>40€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/1997 GLX VR6 Charge.PNG">
+	  <h4>1997 Wolfsburg Charge – GLX VR6</h4>
+	  <p>Ancienne génération VR6</p>
+	  <span>40€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/Crouton.PNG">
+	  <h4>2009 Wolfsburg Crouton – S / SEL Premium</h4>
+	  <p>Citadine confortable</p>
+	  <span>30€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/pioneer.png">
+	  <h4>2023 Wolfsburg Pioneer – Pro Performance / Pro S Tour</h4>
+	  <p>Électrique premium</p>
+	  <span>55€/heure</span>
+	</div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= AUDI ================= -->
+
+<section id="audi">
+  <h2>Audi</h2>
+  <div class="vehicle-list">
+
+    <div class="vehicle"><img src="images/audi R8 V10.PNG"><h4>Audi R8 V10 Performance</h4><p>Supercar</p><span>180€/heure</span></div>
+    <div class="vehicle"><img src="images/RS5.PNG"><h4>Audi RS5 B9</h4><p>Coupé sportif</p><span>120€/heure</span></div>
+    <div class="vehicle"><img src="images/Audi RS3.PNG"><h4>Audi RS3 8Y</h4><p>Compacte performance</p><span>110€/heure</span></div>
+    <div class="vehicle"><img src="images/RS6.PNG"><h4>Audi RS6 C8</h4><p>Break ultra-performant</p><span>150€/heure</span></div>
+    <div class="vehicle"><img src="images/RS7.PNG"><h4>Audi RS7 C8</h4><p>Sportback</p><span>155€/heure</span></div>
+    <div class="vehicle"><img src="images/RSQ8.PNG"><h4>Audi RSQ8</h4><p>SUV sportif</p><span>160€/heure</span></div>
+
+  </div>
+</section>
+
+<!-- ================= BENTLEY ================= -->
+
+<section id="bentley">
+  <h2>Bentley (Mauntley)</h2>
+  <div class="vehicle-list">
+
+    <div class="vehicle"><img src="images/cardiff.PNG"><h4>Mauntley Cardiff 2022 – Special 12</h4><p>Luxe V12</p><span>200€/heure</span></div>
+    <div class="vehicle"><img src="images/soarer.PNG"><h4>Mauntley Soarer 2022 – Special 12</h4><p>Coupé grand tourisme</p><span>210€/heure</span></div>
+
+  </div>
+</section>
+
+<!-- ================= LAMBORGHINI ================= -->
+
+<section id="lamborghini">
+  <h2>Lamborghini (Silhouette)</h2>
+  <div class="vehicle-list">
+
+    <div class="vehicle"><img src="images/gioisa1.PNG"><h4>Silhouette Gioisa 2011 – Velocità Notte</h4><p>Supercar édition spéciale</p><span>190€/heure</span></div>
+    <div class="vehicle"><img src="images/gioisa.PNG"><h4>Silhouette Gioisa 2011 – Speciale Gray</h4><p>Configuration rare</p><span>195€/heure</span></div>
+    <div class="vehicle"><img src="images/rinoceronte.PNG"><h4>Silhouette Rinoceronte – Performance</h4><p>SUV extrême</p><span>220€/heure</span></div>
+
+  </div>
+</section>
+
+<!-- ================= PORSCHE ================= -->
+
+<section id="porsche">
+  <h2>Porsche (Ferdinand)</h2>
+  <div class="vehicle-list">
+
+    <div class="vehicle"><img src="images/1981 Rapido turbo.PNG"><h4>Ferdinand Rapido 1981 – Turbo</h4><p>Classique sportif</p><span>90€/heure</span></div>
+    <div class="vehicle"><img src="images/2004 Roadster ferdinand.PNG"><h4>Ferdinand Roadster 2004 – 3.2S</h4><p>Anniversary Edition</p><span>110€/heure</span></div>
+    <div class="vehicle"><img src="images/2007 ferdinand ultima.PNG"><h4>Ferdinand Ultima 2007 – GT</h4><p>Version piste</p><span>130€/heure</span></div>
+    <div class="vehicle"><img src="images/2017 ferdinand rapido.PNG"><h4>Ferdinand Rapido 2017 – 4S</h4><p>Sport polyvalent</p><span>145€/heure</span></div>
+    <div class="vehicle"><img src="images/Rapido Coupe 2022.PNG"><h4>Ferdinand Rapido Coupé 2022 – Turbo S / 4S</h4><p>Très haute performance</p><span>180€/heure</span></div>
+    <div class="vehicle"><img src="images/Rapido GT3 2022.PNG"><h4>Ferdinand Rapido GT3 2022 – Touring / GT3</h4><p>Piste homologuée</p><span>200€/heure</span></div>
+    <div class="vehicle"><img src="images/vivo grand wagen.PNG"><h4>Ferdinand Vivo Gran Wagen 2023 – Performance Plus</h4><p>Break sportif</p><span>140€/heure</span></div>
+    <div class="vehicle">
+	  <img src="images/jalapeno.png">
+	  <h4>Ferdinand Jalapeño – Turbo AWD</h4>
+	  <p>Transmission intégrale</p>
+	  <span>150€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/cajun.png">
+	  <h4>Ferdinand Cajun 2022 – GTS Black Pack</h4>
+	  <p>SUV sportif</p>
+	  <span>160€/heure</span>
+	</div>
+
+	<div class="vehicle">
+	  <img src="images/Snapper GT4 RS.PNG">
+	  <h4>Ferdinand Snapper 2023 – GT4 RS</h4>
+	  <p>Extrême</p>
+	  <span>190€/heure</span>
+	</div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © Volkswagen Auto Group – RolePlay
+</footer>
+
+</body>
+</html>
